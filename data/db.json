@@ -1,0 +1,286 @@
+{ 
+    "forms":[
+        {
+            "id":"0",
+            "name":"form_heading1",
+            "type":"Heading",
+            "title":{"style":"h1","text":"Examples Of Differet Types Of Inputs Supported By Dynamic Forms"},
+            "style":"pb-5 grey--text"
+        },
+        {
+            "id":"1",
+            "name":"form_heading2",
+            "type":"Heading",
+            "title":{"style":"h3","text":"1) CHECKBOX"}
+        },
+        {
+            "id":"2",
+            "name":"divider_1",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id": "3",
+            "name":"sample_checkbox",
+            "type": "Checkbox",
+            "label":"Select names:",
+            "items": [
+                {"text":"Apples","value":"Fruit1"},
+                {"text":"Mangoes","value":"Fruit2"}
+            ]
+        },
+        {
+            "id":"4",
+            "name":"form_heading3",
+            "type":"Heading",
+            "title":{"style":"h3","text":"2) TEXTFIELD"}
+        },
+        {
+            "id":"5",
+            "name":"divider_2",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id": "6", 
+            "name":"sample_tf",
+            "type": "TextFields", 
+            "label": "Location",
+            "solo":true,
+            "filled":true,  
+            "clearable":true,
+            "dense":true,
+            "rounded":true,
+            "append":"mdi-map-marker"
+        },
+        {
+            "id":"7",
+            "name":"form_heading4",
+            "type":"Heading",
+            "title":{"style":"h3","text":"3) RADIO BUTTON"}
+        },
+        {
+            "id":"8",
+            "name":"divider_3",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"9",
+            "name":"sample_radio",
+            "type":"Radio",
+            "label":{
+                "typeA":"Faiez",
+                "typeB":"Haeaf",
+                "typeC":"Mehmod"
+            }
+            
+        },
+        {
+            "id":"10",
+            "name":"form_heading",
+            "type":"Heading",
+            "title":{"style":"h3","text":"4) SELECT BOX"}
+        },
+        {
+            "id":"11",
+            "name":"divider_4",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"12",
+            "name":"sample_selets",
+            "type":"Selects",
+            "mylabel":"Cars",
+            "label": ["Ford", "BMW", "Fiat"]
+        },
+        {
+            "id":"13",
+            "name":"form_heading5",
+            "type":"Heading",
+            "title":{"style":"h3","text":"5) SWITCH"}
+        },
+        {
+            "id":"14",
+            "name":"divider5",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"15",
+            "name":"sammple_switch",
+            "type":"Switch"
+        },
+        {
+            "id":"16",
+            "name":"form_heading6",
+            "type":"Heading",
+            "title":{"style":"h3","text":"6) AUTOCOMPLETE"}
+        },
+        {
+            "id":"17",
+            "name":"divider_6",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"18",
+            "name":"sammple_ac",
+            "type":"Autocomplete" ,
+            "label": "Select most popular car",
+            "items": ["Ford", "BMW", "Fiat"]
+
+        },
+        {
+            "id":"19",
+            "name":"form_heading7",
+            "type":"Heading",
+            "title":{"style":"h3","text":"7) COMBOBOX"}
+        },
+        {
+            "id":"20",
+            "name":"divider_7",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"21",
+            "name":"sample_c",
+            "type":"Combobox" ,
+            "label": "Select most popular car",
+            "items": ["Ford", "BMW", "Fiat"]
+
+        },
+        {
+            "id":"22",
+            "name":"form_heading8",
+            "type":"Heading",
+            "title":{"style":"h3","text":"9) TEXT AREA"}
+        },
+        {
+            "id":"23",
+            "name":"divider_8",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"24",
+            "name":"sample_ta",
+            "type":"TextArea",
+            "label":"Enter long description",
+            "outlined": true,
+            "filled":true
+        },
+        {
+            "id":"25",
+            "name":"form_heading9",
+            "type":"Heading",
+            "title":{"style":"h3","text":"10) Dividers & headings"}
+        },
+        {
+            "id":"26",
+            "name":"divider_9",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"27",
+            "name":"divider_10",
+            "type":"Divider",
+            "color":"green"
+        },
+        {
+            "id":"277",
+            "name":"divider_11",
+            "type":"Divider",
+            "spacing":"pb-1",
+            "color":"green"
+        },
+        {
+            "id":"00",
+            "name":"form_heading10",
+            "type":"Heading",
+            "title":{"style":"h1","text":"Dependencies supported"},
+            "style":"pb-5 grey--text"
+        },
+        {
+            "id":"28",
+            "name":"form_heading11",
+            "type":"Heading",
+            "title":{"style":"h3","text":"1) Show and Disabled dependency"}
+        },
+        {
+            "id":"29",
+            "name":"divider_12",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"30",
+            "name":"parent-1",
+            "type":"TextFields",
+            "label": "Parent 1",
+            "pretext": "Enter anything to make dependent field visible"
+        },
+        {
+            "id":"31",
+            "name":"parent-2",
+            "type":"TextFields",
+            "label": "Parent 2",
+            "pretext":"Enter anything to enable the dependent field"
+        },
+        {
+            "id":"32",
+            "name":"child",
+            "type":"TextFields",
+            "label":"child",
+            "dependency":{
+                "disable":["parent-2"],
+                "show":["parent-1"]
+            },
+            "pretext":"This is the dependent field"
+        },
+        {
+            "id":"33",
+            "name":"form_heading12",
+            "type":"Heading",
+            "title":{"style":"h3","text":"2) Rules dependency"}
+        },
+        {
+            "id":"34",
+            "name":"divider13",
+            "type":"Divider",
+            "color":"white"
+        },
+        {
+            "id":"35",
+            "name":"From-port",
+            "type":"TextFields",
+            "label": "From port",
+            "rules" : [
+                { "function": "IsNumber"}
+            ]
+        },
+        {
+            "id":"36",
+            "name":"To-port",
+            "type":"TextFields",
+            "label": "To port",
+            "dependency":{
+                "disable":["From-port"]
+            },
+            "rules" : [
+                { "function": "IsNumber"},
+                { "function": 
+                    {
+                        "arguments": "val", 
+                        "body":"return (this.formdata && parseInt(this.formdata['From-port']) < parseInt(this.formdata['To-port'])) || 'Value should be bigger than From port'"
+                    }
+                }
+                
+            ]
+        }
+        
+    ]
+}

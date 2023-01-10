@@ -1,0 +1,93 @@
+{ 
+    "yarn_form":[
+        {
+            "id":"1",
+            "name":"form_heading",
+            "type":"Heading",
+            "title":{"style":"h2","text":"Service Details"}
+            
+        },
+        {
+            "id":"2",
+            "name":"divider_1",
+            "type":"Divider"
+        },
+        {
+            "id": "3", 
+            "name":"d_name",
+            "type": "TextFields", 
+            "label": "Display Name",
+            "solo":true,
+            "filled":true,
+            "pretext":"Display Name* :",
+            "rules" : [
+                { "function": "IsRequired"}
+            ]
+        },
+        {
+            "id":"5",
+            "name":"status",
+            "type":"Switch",
+            "label":"Active/idle",
+            "pretext":"Status:"
+        },
+        {
+            "id": "9", 
+            "name":"url",
+            "type": "TextFields", 
+            "label": "YARN REST URL",
+            "solo":true,
+            "filled":true,
+            "pretext":"URL*:",
+            "rules" : [
+                { "function": "IsRequired"}
+            ]
+        },
+        {
+            "id":"6",
+            "name":"tag_service",
+            "type":"Autocomplete" ,
+            "label": "Select Tag service",
+            "items": [
+                {"text":"key-value","value":"map"},
+                {"text":"hash","value":"map2"}
+            ],
+            "pretext":"Tag Service:"
+        },
+        {
+            "id":"7",
+            "name":"adv_heading",
+            "type":"Heading",
+            "title":{"style":"h2","text":"Advanced"},
+            "advanced_field":true
+        },
+        {
+            "id":"8",
+            "name":"divider_2",
+            "type":"Divider",
+            "advanced_field":true
+        },
+        {
+            "id": "10", 
+            "name":"config",
+            "type": "TextFields", 
+            "label": "Configerations",
+            "solo":true,
+            "filled":true,
+            "pretext":"Configeration:",
+            "advanced_field":true
+        },
+        {
+            "id":"11",
+            "name":"Advaced btn",
+            "type":"advButton"
+        },
+        {
+            "id":"12",
+            "name":"submit btn",
+            "type":"Button",
+            "event":"retdata"
+        }
+        
+    ]
+}
